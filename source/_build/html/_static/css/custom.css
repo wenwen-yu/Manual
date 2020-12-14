@@ -1,0 +1,93 @@
+{% extends "!layout.html" %}
+  {% block footer %} {{ super() }}
+
+  <style>
+  	a {
+    color: #E0D0A9;
+	}
+	a:visited {/*展开的目录颜色*/
+    color: #8DB6CD;
+	}
+	
+	.wy-side-nav-search>a.icon-home {
+    color: #E0D0A9;
+	}	
+	
+	.wy-side-nav-search>a.icon-home img.logo {
+    width: 70%;
+    height: 60%;
+    padding: 0;
+	}
+
+	.wy-side-nav-search>div.version {/*版本号颜色*/
+    color: #8DB6CD;
+    font-weight: bold;
+	}
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #102031;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #102031;
+    }
+    .wy-side-nav-search input[type=text] {
+    border-radius: 0;
+    border-color: #FFFFFF;
+	}
+    .wy-menu-vertical header, .wy-menu-vertical p.caption {/*目录标题*/
+    color: #8DB6CD;
+  }
+  .wy-table-responsive table td, .wy-table-responsive table th {/*表格换行*/
+    white-space: pre-wrap;
+  }
+  .wy-table thead, .rst-content table.docutils thead, .rst-content table.field-list thead {/*表格标题居中*/
+    text-align: center;
+  }
+	.wy-menu-vertical a:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+  }
+  .rst-content dl:not(.docutils) dt {
+    display: table;
+    margin: 6px 0;
+    font-size: 90%;
+    line-height: normal;
+    background: #e7f2fa;;
+    color: #2980B9;
+    border-top: none;
+    border-left: solid 3px #6ab0de;
+    padding: 6px;
+    position: relative;
+  }
+  .rst-content div.figure p.caption {
+    font-style: italic;
+    text-align: center;
+}
+ 
+
+
+/*contents折叠*/	
+  .toggle .header {
+    display: block;
+    clear: both;
+}
+
+.toggle .header:after {
+    content: " ▶";
+}
+
+.toggle .header.open:after {
+    content: " ▼";
+}  
+
+.math {
+  text-align: left;
+}
+
+.eqno {
+  float: right;
+}
+  </style>
+{% endblock %}
+

@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-GB" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-GB" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. 超级模型使用场景介绍 &mdash; Mech-Mind User Guide  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. 纸箱超级模型适用场景介绍" href="../reference/reference.html" />
+    <link rel="prev" title="这是一篇格式规范文档" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Mech-Mind User Guide
+          
+
+          
+            
+            <img src="../_static/mech-mind-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+		  <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="custom.css" type="text/css" />
+<link rel="stylesheet" href="sphinx_rtd_theme.css" type="text/css" />
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Mech-Mind</span>
+      Switch Language
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+	    <dl>
+        Languages:
+        
+          <dd><a href="https://docs.mech-mind.net/index.html">中文</a></dd>
+        
+          <dd><a href="https://docs.mech-mind.net/en-GB/index.html">EN</a></dd>
+      </dl>
+      <!-- <dl>
+        Versions:
+        
+          <dd><a href="D:\gittest\2-21\Manuals_build\html\index.html">Latest</a></dd>
+        
+          <dd><a href="C:\Users\123\Desktop\html-en\Manuals_build\html\index.html">Stable</a></dd>
+        
+      </dl> -->
+      <dl>
+        E-mail:
+          <dd><a href=mailto: support@mech-mind.net>support@mech-mind.net</a></dd>
+        <br>
+        Web:
+          <dd><a href="http://www.mech-mind.net/">http://www.mech-mind.net/</a></dd>
+        <br>
+      </dl>
+
+    </div>
+  </div>
+  <script type="text/javascript">
+        $(function(){
+			$(".fa-caret-down").click(function(){
+				$(".rst-versions").toggleClass("shift-up");
+				});
+			})
+    </script>
+  <!--  <script type="text/javascript" src="jquery-1.8.3.min.js"></script>-->
+</body>
+</html>
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">目录:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. 超级模型使用场景介绍</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">1.1. 纸箱超级模型</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">1.1.1. 适用场景</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">1.1.2. 迭代条件及周期</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">1.2. 麻袋超级模型</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id6">1.2.1. 适用场景</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">1.2.2. 迭代条件及周期</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">1.3. 快递包裹超级模型</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">1.3.1. 适用场景</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">1.3.2. 迭代条件及周期</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">1.4. 任意物品吸取-多物品超级模型</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">1.4.1. 适用场景</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">1.4.2. 迭代条件及周期</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/reference.html">2. 纸箱超级模型适用场景介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../step/step.html">3. Step书写规范</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skill/skill.html">4. Skill书写规范</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Mech-Mind User Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">1. </span>超级模型使用场景介绍</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <style> .red {color:red; font-weight:bold} </style><div class="section" id="id1">
+<h1><span class="section-number">1. </span>超级模型使用场景介绍<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>本章主要对超级模型的使用场景及迭代条件进行说明；</p>
+<div class="section" id="id2">
+<h2><span class="section-number">1.1. </span>纸箱超级模型<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3><span class="section-number">1.1.1. </span>适用场景<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>适用于颜色、花纹单一/多样的纸箱在平拆状态时的拆、码垛；</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>平拆：纸箱在同一平层时水平摆放，没有倾斜放置的情况；</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h3><span class="section-number">1.1.2. </span>迭代条件及周期<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>纸箱外观极复杂或放置情况极特殊导致识别效果不稳定时，需采集数据迭代模型，周期在2天左右；</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2><span class="section-number">1.2. </span>麻袋超级模型<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h3><span class="section-number">1.2.1. </span>适用场景<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>适用于颜色、花纹单一/多样的麻袋在紧密贴合或随意摆放状态时的拆、码垛；</p>
+</div>
+<div class="section" id="id7">
+<h3><span class="section-number">1.2.2. </span>迭代条件及周期<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>麻袋外观极复杂或放置情况极特殊导致识别效果不稳定时，需采集数据迭代模型，周期在2天左右；</p>
+</div>
+</div>
+<div class="section" id="id8">
+<h2><span class="section-number">1.3. </span>快递包裹超级模型<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h3><span class="section-number">1.3.1. </span>适用场景<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>适用于各种快递纸箱包裹的无序抓取；</p>
+</div>
+<div class="section" id="id10">
+<h3><span class="section-number">1.3.2. </span>迭代条件及周期<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>快递包裹有新包装或特殊放置姿态导致识别效果不稳定时，需采集数据迭代模型，周期在2-3天左右，</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>吸取后无序摆放时可用任意物品吸取-快递供包超级模型，有序摆放时可用MaskRCNN超级模型，关于两者的区别在下图中说明：</p>
+</div>
+<div class="figure align-default">
+<img alt="../_images/contrast.png" src="../_images/contrast.png" />
+</div>
+</div>
+</div>
+<div class="section" id="id11">
+<h2><span class="section-number">1.4. </span>任意物品吸取-多物品超级模型<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id12">
+<h3><span class="section-number">1.4.1. </span>适用场景<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>适用于单/多种类小物品的无序吸取；</p>
+</div>
+<div class="section" id="id13">
+<h3><span class="section-number">1.4.2. </span>迭代条件及周期<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>物品有新包装或特殊放置姿态导致识别效果不稳定时，需采集数据迭代模型，周期在2-3天左右；</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>该模型不对物品进行分类，且为无序吸取无序放置；</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../reference/reference.html" class="btn btn-neutral float-right" title="2. 纸箱超级模型适用场景介绍" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="这是一篇格式规范文档" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Mech-Mind
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
